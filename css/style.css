@@ -4,13 +4,55 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 12px;
+}
+
 body {
   background: #fff;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-optical-sizing: auto;
+  font-size: 1.16em;
   color: #245;
 }
+
+.container {
+  width: 88%;
+  margin: 0 auto;
+}
+
+/* header */
+
+.section {
+  padding: 4rem 0 2.6rem 0;
+}
+
+.title {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 2rem;
+  text-transform: lowercase;
+  margin: 0 0 2.6rem 0;
+}
+
+.title::before {
+  content: url('../assets/brand-yellow.svg');
+  background-repeat: no-repeat;
+  margin: 0 2.16rem 0 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin: 0 0 1.3rem 0;
+}
+
+p {
+  padding: 0 0 1rem 0;
+}
+
+/* skills */
 
 /*
 @media screen and (min-width: 481px) {}
