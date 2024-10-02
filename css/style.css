@@ -52,7 +52,18 @@ p {
   padding: 0 0 1rem 0;
 }
 
-/* skills */
+.skills {
+  background-color: #f8f8f8;
+  padding: 4rem 0 1.3rem 0;
+}
+
+ul {
+  margin: 0 0 2.6rem 1.6rem;
+}
+
+li {
+  padding: 0 0 0.2rem 0;
+}
 
 /*
 @media screen and (min-width: 481px) {}
