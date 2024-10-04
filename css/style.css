@@ -64,6 +64,59 @@ li {
   padding: 0 0 0.2rem 0;
 }
 
+.portfolio {
+  padding: 4rem 0 0 0;
+}
+
+.projects-list {
+  list-style-type: none;
+  margin: 0 0 4rem 0;
+}
+
+.projects-list img {
+  margin: 0 0 1.3rem 0;
+}
+
+.projects-list small {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.project-item {
+  margin: 0 0 2rem 0;
+}
+
+.title-tools {
+  font-size: 1.16rem;
+  margin: 1rem 0 1.16rem 0;
+}
+
+.tools-list {
+  list-style-type: disc;
+  margin-bottom: 2rem;
+}
+
+.button-project {
+  display: inline-block;
+  background-color: #fff;
+  color: #5cb;
+  border: 2px solid #5cb;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 1.6rem;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.button-project:hover,
+.button-project:active {
+  background-color: #5cb;
+  color: #fff;
+}
+
 /*
 @media screen and (min-width: 481px) {}
 
