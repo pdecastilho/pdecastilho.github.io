@@ -22,7 +22,45 @@ body {
   margin: 0 auto;
 }
 
-/* header */
+header {
+  background-color: #eee;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+}
+
+.profile {
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  text-transform: lowercase;
+}
+
+.name {
+  padding: 2.6rem 0 4rem 0;
+  width: 100vw;
+}
+
+.name h1 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 4rem;
+  padding: 0 6% 2.6rem 6%;
+}
+
+.name p {
+  font-size: 2rem;
+  color: #689;
+  border-top: 4px solid #fb3;
+  display: inline-block;
+  padding: 1.3rem 0 0 6%;
+}
+
+.picture {
+  display: none;
+}
 
 .introduction {
   padding: 4rem 0 2.6rem 0;
