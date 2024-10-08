@@ -112,6 +112,7 @@ li {
 }
 
 .projects-list img {
+  width: 100%;
   margin: 0 0 1.3rem 0;
 }
 
