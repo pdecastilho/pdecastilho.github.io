@@ -4,132 +4,279 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #eee;
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+html {
+  font-size: 12px;
 }
 
 @media screen and (min-width: 481px) {
-  body {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
     font-size: 16px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  }
+body {
+  background: #fff;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: 1.16em;
+  color: #245;
 }
 
 .container {
-  width: 90vw;
-  max-width: 960px;
+  width: 88%;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
-  .container {
-    width: 95vw;
-  }
+header {
+  background-color: #eee;
 }
 
-h1 {
-  font-family: "Play", sans-serif;
+header .container {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+}
+
+.profile {
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
   text-transform: lowercase;
-  font-weight: bold;
-  font-size: 4em;
 }
 
-h1 .firstname {
-  color: #6ac;
+.name {
+  padding: 2.6rem 0 4rem 0;
+  width: 100vw;
 }
 
-h1 .lastname {
-  color: #27a;
+.name h1 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 4rem;
+  font-weight: normal;
+  padding: 0 0 2.6rem 6%;
 }
 
-.roles {
-  list-style: none;
-  text-transform: lowercase;
-  padding: 1em 0 2em 0;
-  font-size: 1.4em;
-}
-
-.roles li {
-  display: inline;
-}
-
-.roles li:last-child::before {
-  content: "\25CF";
-  font-size: 0.8em;
-  color: #fb3;
+.name p {
+  font-size: 2rem;
+  color: #689;
+  border-top: 4px solid #fb3;
   display: inline-block;
-  margin: 0 0.8em;
+  padding: 1.3rem 0 0 6%;
+}
+
+.picture {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .roles li:last-child::before {
-    font-size: 1em;
+  .name {
+    width: 60vw;
+  }
+
+  .name h1 {
+    padding-left: 10%;
+  }
+
+  .name p {
+    padding-left: 10%;
+    border-width: 8px;
+  }
+
+  .picture {
+    display: inline-block;
+    width: 250px;
+    margin: 0 6% 0 0;
+    border: 4px solid #fff;
+    transform: translate(-20px, -50px);
+  }
+
+  .picture img {
+    width: 100%;
+    transform: translate(20px, 20px);
   }
 }
 
-.social {
-  margin: 0 0 2em 0;
+@media screen and (min-width: 1024px) {
+  .picture {
+    width: 300px;
+  }
 }
 
-.social li {
-  list-style: none;
+.introduction {
+  padding: 4rem 0 2.6rem 0;
+}
+
+.title {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: lowercase;
+  margin: 0 0 2.6rem 0;
+}
+
+.title::before {
+  content: url('../assets/brand-yellow.svg');
+  background-repeat: no-repeat;
+  margin: 0 1.3rem 0 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1.3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .col1,
+  .col2 {
+    width: 48%;
+  }
+}
+
+p {
+  padding: 0 0 1rem 0;
+}
+
+.skills {
+  background-color: #f8f8f8;
+  padding: 4rem 0 1.3rem 0;
+}
+
+ul {
+  margin: 0 0 2.6rem 1.6rem;
+}
+
+li {
+  padding: 0 0 0.2rem 0;
+}
+
+.portfolio {
+  padding: 4rem 0 0 0;
+}
+
+.projects-list {
+  list-style-type: none;
+  margin: 0 0 4rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-list>li {
+    width: 48%;
+    display: inline-block;
+  }
+
+  .projects-list>li:nth-child(odd) {
+    margin-right: 3%;
+  }
+}
+
+.projects-list img {
+  width: 100%;
+  margin: 0 0 1.3rem 0;
+}
+
+.projects-list small {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+.project-item {
+  margin: 0 0 2rem 0;
+}
+
+.title-tools {
+  font-size: 1.16rem;
+  margin: 1rem 0 1.16rem 0;
+}
+
+.tools-list {
+  list-style-type: disc;
+  margin-bottom: 2rem;
+}
+
+.button-project {
   display: inline-block;
-  font-size: 0;
+  background-color: #fff;
+  color: #5cb;
+  border: 2px solid #5cb;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 1.6rem;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.button-project:hover,
+.button-project:active {
+  background-color: #5cb;
+  color: #fff;
+}
+
+.contact {
+  background-color: #f8f8f8;
+  padding: 4rem 0 2.6rem 0;
+}
+
+.social-buttons {
+  list-style-type: none;
+  margin: 0;
+}
+
+.social-buttons a {
+  color: transparent;
+  text-decoration: none;
+}
+
+.social-buttons li {
+  font-size: 0px;
   text-indent: -9999px;
+  display: inline-block;
   width: 50px;
   height: 50px;
-  margin: 0 10px 0 0;
+  margin: 0 12px 12px 0;
+  padding: 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.social .linkedin {
-  background-image: url("../assets/linkedin.svg");
+.btn-mail {
+  background-image: url('../assets/mail.svg');
 }
 
-.social .github {
-  background-image: url("../assets/github.svg");
+.btn-linkedin {
+  background-image: url('../assets/linkedin.svg');
 }
 
-.social .telegram {
-  background-image: url("../assets/telegram.svg");
+.btn-github {
+  background-image: url('../assets/github.svg');
 }
 
 @media screen and (min-width: 768px) {
-  .social li {
-    width: 60px;
-    height: 60px;
+  .col-small {
+    width: 50vw;
   }
 }
 
-.cv {
-  font-size: 1em;
-}
-
-.cv a {
-  color: #5cb;
-  text-decoration: none;
-}
-
-.cv a:hover {
-  text-decoration: underline;
+footer {
+  border-bottom: 16px solid #245;
+  background-color: #fff;
+  padding: 4rem 0 2.6rem 0;
 }
